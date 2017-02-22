@@ -1,11 +1,13 @@
 ﻿
 /*
     iMacros JavaScript macro for Steam collection organization
+    Using iMacros 8.9.7 on Firefox
+
     SteamWorkshop_CollectionAllAndUnsub v1.0
 */
 
 var appId = 255710;         // Cities: Skylines hard-coded appId
-var userName = "eichiro";
+var userName = "";
 var modCollectionId = 852323535;
 var collectionId = 869286512;
 var iterationCount = 3;
@@ -51,7 +53,7 @@ function calcTimeTaken(startedAt, finishedAt) {
     return ( takenSeconds >= 60 ? (Math.round(takenSeconds/60) + " minutes"):(takenSeconds + " seconds") );
 }
 
-
+// Macro execution
 iimPlayCode(macroTextInit);
 initTime = new Date().getTime();
 for (var i=0 ; i<iterationCount ; i++) {
