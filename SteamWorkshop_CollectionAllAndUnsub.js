@@ -1,16 +1,35 @@
 ﻿
 /*
+              Steam Workshop Utils - Collectionizer
+    ----------------------------------------------------------
     iMacros JavaScript macro for Steam collection organization
-    Using iMacros 8.9.7 on Firefox
 
-    SteamWorkshop_CollectionAllAndUnsub v1.0
+    Tested using iMacros 8.9.7 on Firefox 51.0.1.
+    iMacros version 8.9.7 is required. The macro will not work
+    on 9.0.3 and later due to the inability to access window.content 
+    on more recent versions.
+
+    Author: Gabriel Rodríguez (github.com/gabrielrf96)
+    Version: v1.0 (2017-02-22)
+
+    CAUTION - This macro has been tested under very specific
+    circumstances, for very specific purposes. Use at your own risk.
+
+    This macro will be updated in the future to allow further and 
+    easier personalization. Until then, any use of this macro for 
+    purposes other than initially intended, might yield unexpected 
+    results to other users.
+
+    Therefore, no instructions on its use will be given until said
+    improvements are made.
 */
 
-var appId = 255710;         // Cities: Skylines hard-coded appId
-var userName = "";
-var modCollectionId = 852323535;
-var collectionId = 869286512;
-var iterationCount = 3;
+
+var appId = 255710;                 // Steam game appId
+var userName = "";                  // Steam user name
+var modCollectionId = 852323535;    // Mod collection id
+var collectionId = 869286512;       // General collection id
+var iterationCount = 500;           // Number of subscribed items to process
 
 var initTime;
 var finishTime;
